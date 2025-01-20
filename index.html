@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Divisas</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="image">
+    <div class="container">
+      <h1>Conversor de Divisas</h1>
+      <form id="currency-form" class="form-group">
+        <!-- Campo Monto -->
+        <div class="form-row">
+          <div class="form-control">
+            <label for="amount">Monto:</label>
+            <input type="number" id="amount" placeholder="Ingrese monto" required>
+          </div>
+        </div>
+
+        <!-- Fila Divisas -->
+        <div class="form-row">
+          <div class="form-control">
+            <label for="from-currency">Divisa 1:</label>
+            <select id="from-currency" required>
+              <option value="">Seleccione moneda</option>
+            </select>
+          </div>
+
+          <div class="swap-container">
+            <button type="button" class="swap-button">&#8646;</button>
+          </div>
+
+          <div class="form-control">
+            <label for="to-currency">Divisa 2:</label>
+            <select id="to-currency" required>
+              <option value="">Seleccione moneda</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Resultado -->
+        <div id="result">
+          <p>El resultado aparecerá aquí</p>
+        </div>
+
+        <!-- Botón Convertir -->
+        <button type="submit" class="convert-button">Convertir</button>
+      </form>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
